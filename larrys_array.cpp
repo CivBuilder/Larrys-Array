@@ -14,7 +14,20 @@ vector<string> split(const string &);
  */
 
 string larrysArray(vector<int> A) {
+        bool sorted = false;
 
+        while (!sorted) {
+        sorted = true;
+        for (size_t i = 0; i < A.size()-2; ++i) {
+            while (A[i] > A[i+1] || A[i] > A[i+2]) {
+                sorted = false;
+                std::swap(A[i],A[i+2]);
+                std::swap(A[i+1],A[i+2]);
+            }
+        }
+    }
+    
+    return (A[A.size()-2]<A[A.size()-1]) ? "YES" : "NO";
 }
 
 int main()
