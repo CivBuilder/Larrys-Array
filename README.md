@@ -1,18 +1,12 @@
-# Larrys-Array
+# Larrys-Array Hacker-Rank Problem (Medium)
 
-Larry has been given a permutation of a sequence of natural numbers incrementing from
+Larry has been given a permutation of a sequence of natural numbers incrementing from 1 as an array. He must determine whether the array can be sorted using the following operation any number of times:
 
-as an array. He must determine whether the array can be sorted using the following operation any number of times:
+Choose any 3 consecutive indices and rotate their elements in such a way that
 
-    Choose any 
+ABC->BCA->CAB->ABC.
 
-consecutive indices and rotate their elements in such a way that
-
-    .
-
-For example, if
-
-:
+For example, A = {1,6,5,2,4,3}  :
 
 A		rotate 
 [1,6,5,2,4,3]	[6,5,2]
@@ -24,9 +18,8 @@ A		rotate
 
 YES
 
-On a new line for each test case, print YES if
 
-can be fully sorted. Otherwise, print NO.
+On a new line for each test case, print YES if A can be fully sorted. Otherwise, print NO.
 
 Function Description
 
@@ -38,33 +31,16 @@ larrysArray has the following parameter(s):
 
 Input Format
 
-The first line contains an integer
+The first line contains an integer t, the number of test cases.
 
-, the number of test cases.
+The next t pairs of lines are as follows:
 
-The next
-
-pairs of lines are as follows:
-
-    The first line contains an integer 
-
-, the length of
-.
-The next line contains
-space-separated integers
-
-    ![image](https://user-images.githubusercontent.com/75051520/180620683-3a7ea624-da17-41e6-8314-930c85871228.png)
-
-
-Constraints
-
-integers that increment by from to
+    The first line contains an integer n, the length of A.
+    The next line contains n space-separated integers A[i].
 
 Output Format
 
-For each test case, print YES if
-
-can be fully sorted. Otherwise, print NO.
+For each test case, print YES if A can be fully sorted. Otherwise, print NO.
 
 Sample Input
 
@@ -81,26 +57,3 @@ Sample Output
 YES
 YES
 NO
-
-Explanation
-
-In the explanation below, the subscript of
-
-denotes the number of operations performed.
-
-Test Case 0:
-
-is now sorted, so we print
-
-on a new line.
-
-Test Case 1:
-.
-.
-is now sorted, so we print
-
-on a new line.
-
-Test Case 2:
-No sequence of rotations will result in a sorted
-. Thus, we print on a new line.
